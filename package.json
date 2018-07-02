@@ -1,0 +1,56 @@
+{
+  "username": "about-website",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "body-parser": "~1.15.1",
+    "bootable": "^0.2.4",
+    "bootable-environment": "^0.2.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.15.2",
+    "express-session": "^1.14.2",
+    "jade": "~1.11.0",
+    "jquery": "^3.2.1",
+    "log4js": "^1.1.0",
+    "method-override": "^2.3.7",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.7.5",
+    "morgan": "^1.8.2",
+    "nconf": "^0.8.4",
+    "nib": "^1.1.2",
+    "node-telegram-bot-api": "^0.29.0",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.2",
+    "require-tree": "^1.1.1",
+    "serve-favicon": "~2.3.0",
+    "stylus": "^0.54.5",
+    "winston-wrapper": "0.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aohontsev/about-website"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "prettier": "1.13.7"
+  }
+}

@@ -1,0 +1,13 @@
+extend ../layout
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Log In
+        form(method='POST' action='/login')
+          fieldset
+            label(for='email') Email
+            input(type='email' name='email' placeholder='Your Email')
+            label(for='password') Password
+            input(type='password' name='password' placeholder='Your Password')
+            button(type='Login') Login

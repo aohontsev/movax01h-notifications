@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Anton Okhontsev
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      div.header-div#grid
+        div(class="grid-item")
+          a(href='/') Home
+        div(class="grid-item")
+          h1 Anton Okhontsev
+        div(class="grid-item")
+          a(href='/login') Log in
+          |
+          | /
+          |
+          a(href='/register') Sign in
+    .container
+      .main-content
+        block content
+    footer
+      p Running on node with Express, Jade and Stylus

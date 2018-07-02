@@ -1,0 +1,16 @@
+extend ../../layout
+block content
+    .row
+      .col-md-6.col-md-offset-3
+      table
+        for task in tasks
+          tr
+            td= task.title
+
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Add new task
+          form(action='/admin/home_cleanup_bot/tasks' method='post' enctype='application/x-www-form-urlencoded')
+            fieldset
+              label(for='title') title
+              input(type='title' id='title' name='title' placeholder='title')
+              button(type='Add') Add

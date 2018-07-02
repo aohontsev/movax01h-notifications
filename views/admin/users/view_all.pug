@@ -1,0 +1,23 @@
+extend ../../layout
+block content
+  .row
+    .col-md-6.col-md-offset-6
+    table
+      for user in users
+        tr
+          td= user.username
+          td= home_cleanup_telegram_chat_id
+            user.is_admin #{user.is_admin}
+          td
+            user.home_cleanup_telegram_chat_id #{user.home_cleanup_telegram_chat_id}
+
+    .col-md-6.col-md-offset-3
+      h1.display-4.m-b-2 Add new user
+        form(action='/admin/users' method='post' enctype='application/x-www-form-urlencoded')
+          fieldset
+            label(for='username') username
+            input(type='username' id='username' name='username' placeholder='username')
+            label(for='password') password
+            input(type='password' id='password' name='password' placeholder='password')
+            button(type='Register') Register
+
